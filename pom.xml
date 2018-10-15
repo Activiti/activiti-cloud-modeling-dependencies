@@ -91,7 +91,7 @@
 
   <properties>
     <activiti-cloud-modeling-build.version>7.0.0-SNAPSHOT</activiti-cloud-modeling-build.version>
-    <activiti-cloud-org-service.version>7.0.0-SNAPSHOT</activiti-cloud-org-service.version>
+    <activiti-cloud-org-service.version>7.0.17</activiti-cloud-org-service.version>
     <activiti-cloud-process-model-service.version>7.0.19</activiti-cloud-process-model-service.version>
   </properties>
 
