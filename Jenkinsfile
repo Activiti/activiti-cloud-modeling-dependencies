@@ -56,8 +56,11 @@ pipeline {
             sh 'export UPDATEBOT_MERGE=false'
 
             sh "jx step git credentials"
-            sh "echo 'not pushing to downstream for now'"
+
+            sh "echo pushing with update using version \$(cat VERSION)"
             
+            //add updatebot configuration to push to downstream
+            sh "updatebot push-version --kind maven org.activiti.cloud.modeling.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
           }
         }
       }
