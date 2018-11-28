@@ -95,6 +95,18 @@
     <activiti-cloud-process-model-service.version>7.0.26</activiti-cloud-process-model-service.version>
   </properties>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.activiti.cloud.modeling.build</groupId>
+        <artifactId>activiti-cloud-modeling-dependencies-parent</artifactId>
+        <version>${activiti-cloud-modeling-build.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.activiti.cloud.modeling.build</groupId>
