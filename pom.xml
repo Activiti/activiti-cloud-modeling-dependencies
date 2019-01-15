@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.activiti.cloud.modeling.build</groupId>
     <artifactId>activiti-cloud-modeling-parent</artifactId>
-    <version>7.0.4</version>
+    <version>0.0.0-SNAPSHOT-PR-4-1</version>
     <relativePath/>
   </parent>
   <groupId>org.activiti.cloud.dependencies</groupId>
@@ -90,9 +90,9 @@
   </repositories>
 
   <properties>
-    <activiti-cloud-modeling-build.version>7.0.4</activiti-cloud-modeling-build.version>
-    <activiti-cloud-org-service.version>7.0.76</activiti-cloud-org-service.version>
-    <activiti-cloud-process-model-service.version>7.0.58</activiti-cloud-process-model-service.version>
+    <activiti-cloud-modeling-build.version>0.0.0-SNAPSHOT-PR-4-1</activiti-cloud-modeling-build.version>
+    <activiti-cloud-org-service.version>0.0.0-SNAPSHOT-PR-136-3</activiti-cloud-org-service.version>
+    <activiti-cloud-process-model-service.version>0.0.0-SNAPSHOT-PR-90-3</activiti-cloud-process-model-service.version>
   </properties>
 
   <dependencyManagement>
