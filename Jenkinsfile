@@ -21,11 +21,7 @@ pipeline {
           container('maven') {
             sh "mvn versions:set -DnewVersion=$PREVIEW_VERSION"
             sh "mvn install"
-            sh 'export VERSION=$PREVIEW_VERSION'
-            sh 'mvn clean deploy -DskipTests'
-
           }
-
         }
       }
       stage('Build Release') {
@@ -94,7 +90,6 @@ pipeline {
 
             //add updatebot configuration to push to downstream
             sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
-            
           }
         }
       }
@@ -103,11 +98,5 @@ pipeline {
         always {
             cleanWs()
         }
-//        failure {
-//            input """Pipeline failed.
-//We will keep the build pod around to help you diagnose any failures.
-//
-//Select Proceed or Abort to terminate the build pod"""
-//        }
     }
   }
