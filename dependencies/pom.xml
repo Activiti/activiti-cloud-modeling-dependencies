@@ -19,13 +19,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.activiti.cloud.process.model</groupId>
-        <artifactId>activiti-cloud-process-model-dependencies</artifactId>
-        <version>${activiti-cloud-process-model-service.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   
