@@ -92,7 +92,6 @@
   <properties>
     <activiti-cloud-modeling-build.version>7.0.6</activiti-cloud-modeling-build.version>
     <activiti-cloud-org-service.version>7.0.88</activiti-cloud-org-service.version>
-    <activiti-cloud-process-model-service.version>7.0.67</activiti-cloud-process-model-service.version>
   </properties>
 
   <dependencyManagement>
@@ -118,12 +117,6 @@
       <groupId>org.activiti.cloud.modeling</groupId>
       <artifactId>activiti-cloud-org-dependencies</artifactId>
       <version>${activiti-cloud-org-service.version}</version>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.activiti.cloud.process.model</groupId>
-      <artifactId>activiti-cloud-process-model-dependencies</artifactId>
-      <version>${activiti-cloud-process-model-service.version}</version>
       <type>pom</type>
     </dependency>
   </dependencies>
