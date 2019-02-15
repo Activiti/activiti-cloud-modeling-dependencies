@@ -26,7 +26,7 @@ pipeline {
       }
       stage('Build Release') {
         when {
-          branch 'develop'
+          branch '7.0.x'
         }
         steps {
           container('maven') {
@@ -89,7 +89,8 @@ pipeline {
             sh "echo pushing with update using version \$(cat VERSION)"
 
             //add updatebot configuration to push to downstream
-            sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
+            //7.0.x
+            // sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
           }
         }
       }
