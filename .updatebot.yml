@@ -4,6 +4,6 @@ github:
   - name: activiti
     repositories:
     - name: activiti-cloud-modeling
-      branch: master
+      branch: 7.0.x
     - name: activiti-cloud-acceptance-scenarios
-      branch: master
+      branch: 7.0.x
