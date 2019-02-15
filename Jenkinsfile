@@ -56,7 +56,7 @@ pipeline {
             sh "echo pushing with update using version \$(cat VERSION)"
             
             //add updatebot configuration to push to downstream
-            sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
+            // sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
           }
         }
       }
