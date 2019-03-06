@@ -7,3 +7,4 @@ github:
       branch: master
     - name: activiti-cloud-acceptance-scenarios
       branch: master
+      useSinglePullRequest: true
