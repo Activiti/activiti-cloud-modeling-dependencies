@@ -91,7 +91,7 @@
 
   <properties>
     <activiti-cloud-modeling-build.version>7.1.4</activiti-cloud-modeling-build.version>
-    <activiti-cloud-org-service.version>7.1.78</activiti-cloud-org-service.version>
+    <activiti-cloud-org-service.version>7.1.79</activiti-cloud-org-service.version>
   </properties>
 
   <dependencyManagement>
