@@ -8,3 +8,5 @@ github:
     - name: activiti-cloud-acceptance-scenarios
       branch: master
       useSinglePullRequest: true
+    - name: activiti-cloud-full-chart
+      useSinglePullRequest: true  
