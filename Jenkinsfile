@@ -58,7 +58,7 @@ pipeline {
             sh "echo pushing with update using version \$(cat VERSION)"
             
             retry(2){
-              sh "updatebot push-version --kind  make MODELING_DEPENDENCIES_VERSION \$(cat VERSION)"
+              //sh "updatebot push-version --kind  make MODELING_DEPENDENCIES_VERSION \$(cat VERSION)"
               sh "updatebot push-version --kind maven org.activiti.cloud.dependencies:activiti-cloud-modeling-dependencies \$(cat VERSION)"
               sh "rm -rf .updatebot-repos/"
               sh "sleep \$((RANDOM % 10))"
